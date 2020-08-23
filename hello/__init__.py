@@ -33,4 +33,9 @@ def create_app():
     def shows_news():
         return "Today’s news is ..."
 
+    @app.route('/greeting/<name>')
+    def greeting(name):
+        return "Kia Ora " + name
+
     return app
+
